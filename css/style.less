@@ -1,0 +1,350 @@
+.navbar {
+	margin-bottom: 0px !important;
+
+	.searchBtn {
+		width: 300px !important;
+	}
+	.input-group-addon {
+		padding: 0px;
+	}
+	select {
+		/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+		border: solid 0.1px #ccc;  /*很关键：将默认的select选择框样式清除*/
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;  /*在选择框的最右侧中间显示小箭头图片*/
+		background: url(../img/arrow.png) no-repeat scroll right center transparent;  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+		// background-size: 40px;
+		// height: 30px;
+		// padding-right: 14px;
+	}
+}
+#header {
+	height: 40px;
+	background: url('../img/header_bg.png');
+
+	h5 {
+		margin: 0;
+		padding: 0;
+		color: #666;
+		height: 40px;
+		float: left;
+		line-height: 40px;
+		margin-left: 33px;
+	}
+	.header_main {
+		height: 40px;
+	}
+	.header_member {
+		float: left;
+		height: 40px;
+		line-height: 40px;
+		color: #555;
+		font-size: 14px;
+		margin-left: 80px;
+		a {
+			padding-right: 30px;
+			color: #0082CA;
+			font-size: 14px;
+
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}
+.proCategory {
+	.nav-arrow-inner {
+		border-color: transparent transparent #ccc;
+		border-style: solid;
+		border-width: 0 9px 9px;
+		font-size: 0;
+		height: 0;
+		left: 5px;
+		line-height: 0;
+		position: absolute;
+		top: -8px;
+		width: 0;
+		z-index: 9999;
+	}
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+		position: relative;
+		min-height: 1px;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+	.list-group {
+		border: 2px solid #ccc;
+		filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090, direction=120, strength=3);/*ie*/
+		-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/
+		-webkit-box-shadow: 2px 2px 10px #909090;/*safari或chrome*/
+		box-shadow: 2px 2px 10px #909090;/*opera或ie9*/
+		background-color: #fff;
+		a {
+			color: #000;
+
+			&:hover {
+				text-decoration: none;
+				font-weight: bold;
+			}
+		}
+		span {
+			float: right;
+		}
+	}
+	.list-group-item {
+		border: none;
+	}
+	.carousel-inner {
+		img {
+			margin: 0 auto;
+			max-height: 500px
+		}
+		.item {
+			background-color: #A6CEE7;
+		}
+	}
+}
+.secondPro {
+	position: absolute;
+	z-index: 9999;
+	// top: -40px;
+	width: 600px;
+	display: none;
+	padding: 15px;
+	padding-left: 20px;
+	line-height: 1.8em;
+	border: 1px solid #ccc;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090, direction=120, strength=3);/*ie*/
+	-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090;/*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090;/*opera或ie9*/
+	background-color: #fff;
+	li {
+		list-style: none;
+		float: none;
+		margin-left: 25px;
+
+		a {
+			margin-right: 3px;
+			margin-left: 3px;
+			padding-right: 10px;
+			font-size: 13px;
+			border-right: 1px solid #ccc;
+			word-break: keep-all;           /* 不换行 */
+			white-space: nowrap;
+
+			/* 不换行 */
+			&:hover {
+				text-decoration: underline !important;
+				font-weight: normal !important;
+			}
+		}
+		.second-title-link {
+			color: #e47911 !important;
+			border-right: none !important;
+		}
+	}
+	.second-subcat-title {
+		float: left;
+	}
+	.second-subcat-link {
+		// padding-left: 7px;
+		display: block;
+		// float: left;
+		margin-left: 80px;
+	}
+	h4 {
+		color: #e47911;
+		margin: 0;
+		margin-bottom: 18px;
+	}
+}
+.spotGoods, .diyGoods, .preSell {
+	.box {
+		background-color: #ccc;
+		min-height: 244px;
+		margin-top: 5px;
+		height: 100%;
+
+		h4, h2 {
+			padding: 0;
+			margin: 0;
+		}
+	}
+	.pox {
+		background-color: #eee;
+		min-height: 244px;
+		margin-top: 5px;
+		height: 100%;
+		// padding-left: 50px;
+
+		h4, h2 {
+			padding: 0;
+			margin: 0;
+		}
+		img {
+			max-height: 242px;
+			max-width: 242px;
+			vertical-align: middle;
+			// padding-left: 50px;
+			// padding-top: 50px;
+		}
+	}
+	.gfloorarrow {
+		position: absolute;
+		z-index: 1;
+		top: 45%;
+		width: 0px;
+		height: 0px;
+		border-top: 10px solid rgba(0, 0, 0, 0);
+		border-bottom: 10px solid rgba(0, 0, 0, 0);
+		border-left: 10px solid #ccc;
+	}
+	.gfcontent_header {
+		// padding-left: 35%;
+		text-align: center;
+		padding-top: 50px;
+
+		a {
+			font-size: 18px;
+			color: black;
+			font-weight: bold;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.gfbigContent {
+		text-align: center;
+		padding-top: 15px;
+
+		a {
+			font-size: 30px;
+			color: black;
+			font-weight: bold;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.gfcontentbuy {
+		text-align: center;
+		padding-top: 35px;
+		padding-bottom: 55px;
+
+		a {
+			color: #767676;
+			font-size: 12px;
+
+			&:hover {
+				color: #E47911;
+			}
+		}
+	}
+	.hot-words {
+		padding-top: 30px;
+		padding-left: 30px;
+
+		a {
+			font-size: 18px;
+			color: black;
+			font-weight: bold;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.words-list {
+		padding: 20px 0 0 30px;
+
+		ul {
+			width: 80px;
+			margin: 0px;
+			padding: 0px;
+			display: inline-block;
+
+			li {
+				list-style: none;
+				line-height: 2em;
+			}
+			a {
+				// font-size: 18px;
+				color: black;
+				// font-weight: bold;
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+				&:hover {
+					text-decoration: none;
+					color: #E47911;
+				}
+			}
+		}
+	}
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+		padding: 0 !important;
+	}
+}
+.footer {
+	margin-top: 50px;
+	margin-bottom: 20px;
+
+	.footerLogo {
+		margin-top: 40px;
+		text-align: center;
+		margin-bottom: 5px;
+
+		p {
+			color: #7F5642;
+		}
+	}
+	.footerCopyright {
+		p {
+			color: #767676;
+			font-size: 11px;
+			text-align: center;
+			line-height: 18px;
+			margin-bottom: 0;
+		}
+	}
+	.footerIntroduce {
+		line-height: 1.5em;
+		text-align: center;
+
+		p {
+			font-size: 12px;
+			color: #949494;
+			margin-bottom: 0;
+		}
+	}
+	.container {
+		padding: 0px 40px 0px 40px;
+
+		h4 {
+			text-align: center;
+		}
+		ul {
+			padding: 0;
+
+			li {
+				list-style: none;
+				text-align: center;
+
+				a {
+					line-height: 1.6em;
+					font-size: 13px;
+
+					&:hover {
+						color: red;
+					}
+				}
+			}
+		}
+	}
+}
